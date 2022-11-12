@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Car from '../../public/assets/car.png';
 import { getManufacturers } from '../../services/api';
-import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
 
-const Select = dynamic(() => import('react-select'), {
+const Dropdown = dynamic(() => import('../../components/detail-todos/Dropdown'), {
   suspense: true,
 })
 
@@ -14,14 +12,6 @@ const options = [
   { value: 'strawberry', label: 'Strawberry' },
   { value: 'vanilla', label: 'Vanilla' }
 ]
-
-const formatGroupLabel = (data) => (
-  <div style={groupStyles}>
-    <span>{data.label}</span>
-    <span style={groupBadgeStyles}>{data.options.length}</span>
-  </div>
-);
-
 
 const DetailedTodos = ({ data }) => {
   const [manufacturerList, setManufacturer] = useState({ popular: [], nonPopular: [] });
@@ -60,16 +50,7 @@ const DetailedTodos = ({ data }) => {
       </div>
       <section>
         <Suspense fallback={`Loading...`}>
-          <Select
-            defaultValue={options[1]}
-            options={options}
-            formatGroupLabel={formatGroupLabel}
-          />
-          <Select
-            defaultValue={options[0]}
-            options={[...manufacturerList.popular, ...manufacturerList.nonPopular]}
-            formatGroupLabel={formatGroupLabel}
-          />
+          <Dropdown data1={options} data2={[...manufacturerList.popular, ...manufacturerList.nonPopular]} />
         </Suspense>
       </section>
       <section>
