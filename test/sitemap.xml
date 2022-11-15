@@ -2,43 +2,43 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>localhost:3000/comments</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>localhost:3000</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>localhost:3000/todos</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>localhost:3000/detail-todos/[id]</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>localhost:3000/detailed-comment/[id]</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-<url>
-    <loc>localhost:3000/sitemap-xml/index.js</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>localhost:3000/server-sitemap.xml/index</loc>
-    <lastmod>2022-11-12T17:03:18.116Z</lastmod>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+<url>
+    <loc>localhost:3000/sitemap-xml/index.js</loc>
+    <lastmod>2022-11-15T09:15:08.404Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

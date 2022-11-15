@@ -6,12 +6,14 @@ const Todos = ({ data }) => {
     <section>
         <h3>Todos</h3>
         {data.map(k => <div>
-            <Link href={`/detail-todos/${k.id}`}>
+            <Link href={`/detail-todos/${k.id}?pid=308`} passHref>
+              <a target='_blank'>
                 <ul className='box'>
-                    <li>id - {k.id}</li>
-                    <li>title - {k.title}</li>
-                    <li>status - {k.completed ?"yes": "no"}</li>
+                      <li>id - {k.id}</li>
+                      <li>title - {k.title}</li>
+                      <li>status - {k.completed ?"yes": "no"}</li>
                 </ul>
+              </a>
             </Link>
         </div>)}
         <style jsx>{`
